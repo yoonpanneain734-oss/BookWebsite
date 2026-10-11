@@ -112,9 +112,6 @@ nav .active {
     font-size: 17px;
 }
 
-
-/* Collection Cards */
-
 .collection-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -163,8 +160,29 @@ nav .active {
     text-decoration: underline;
 }
 
+@media (max-width: 1100px) {
+    nav {
+        gap: 20px;
+    }
+    .search {
+        display: none;
+    }
+    .book-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 
-/* Responsive */
+
+@media (max-width: 750px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+}
 
 @media (max-width: 850px) {
 
