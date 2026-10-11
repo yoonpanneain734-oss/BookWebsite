@@ -4,28 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Shop</title>
-
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="shop.css">
 </head>
 
 <body>
-
-    <!-- Hamburger Checkbox -->
     <input type="checkbox" id="menu-toggle">
-
-    <!-- Hamburger Button -->
     <label for="menu-toggle" class="toggle" aria-label="Toggle categories menu">
         <span class="top_line common"></span>
         <span class="middle_line common"></span>
         <span class="bottom_line common"></span>
     </label>
 
-    <!-- Navigation Bar -->
     <header class="navbar">
         <div class="logo">
             <span>Book Store</span>
@@ -47,19 +38,13 @@
             <button class="login">
                 👤 Login
             </button>
-
         </div>
-
     </header>
 
-    <!-- Dark Background When Menu Opens -->
     <label for="menu-toggle" class="overlay"></label>
 
-    <!-- Categories Sidebar -->
-    <aside class="slide">
-
+    <div class="slide">
         <h2>Categories</h2>
-
         <ul>
             <li>
                 <a href="#all-books">
@@ -110,21 +95,15 @@
                 </a>
             </li>
         </ul>
+    </div>
 
-    </aside>
-
-    <!-- Main Shop Content -->
     <main class="shop-container">
-
         <section class="books-area" id="all-books">
-
-            <!-- Myanmar Novel -->
-            <h2 class="category-title" id="myanmar-novel">
-                Myanmar Novel
+            <h2 class="category-title" id="myanmar-books">
+                Myanmar Books
             </h2>
 
             <div class="book-grid">
-
                 <div class="book-card">
                     <div class="book-image">
                         <img src="image/book1.png" alt="Ah Mhat Ta Ya">
@@ -215,7 +194,6 @@
 
             </div>
 
-            <!-- English Novel -->
             <h2 class="category-title" id="english-novel">
                 English Novel
             </h2>
@@ -260,7 +238,6 @@
 
             </div>
 
-            <!-- IT Books -->
             <h2 class="category-title" id="it-books">
                 Information Technology
             </h2>
