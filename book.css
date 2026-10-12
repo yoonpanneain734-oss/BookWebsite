@@ -11,13 +11,12 @@ body {
 }
 
 .navbar {
-    width: 90%;
+    width: 95%;
     margin: 30px auto;
     padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .logo {
@@ -91,7 +90,6 @@ nav .active {
 .login:hover {
     background: #dce5f0;
 }
-
 .book-1 {
     width: 95%;
     min-height: 340px;
