@@ -17,10 +17,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f5f8fc;
-    border-radius: 25px;
-    box-shadow: 10px 10px 25px rgba(80, 100, 120, 0.15),
-        -5px -5px 20px rgba(255, 255, 255, 0.8);
 }
 
 .logo {
@@ -67,7 +63,7 @@ nav .active {
 .search {
     display: flex;
     align-items: center;
-    background: #e8edf4;
+    background: #dce5f0;
     padding: 12px 18px;
     border-radius: 25px;
 }
