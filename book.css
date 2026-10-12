@@ -90,6 +90,27 @@ nav .active {
 .login:hover {
     background: #dce5f0;
 }
+
+.profile-icon,
+.cart-icon {
+    position: relative;
+    color: #24496f;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background: #24496f;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+
 .book-1 {
     width: 95%;
     min-height: 340px;
