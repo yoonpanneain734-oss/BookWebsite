@@ -1,26 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="shop.css">
 </head>
 
 <body>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="toggle" aria-label="Toggle categories menu">
-        <span class="top_line common"></span>
-        <span class="middle_line common"></span>
-        <span class="bottom_line common"></span>
-    </label>
-
     <header class="navbar">
         <div class="logo">
             <span>Book Store</span>
         </div>
+
         <nav>
             <a href="book-index.html">Home</a>
             <a href="shop.html" class="active">Shop</a>
@@ -31,244 +24,245 @@
         <div class="nav-right">
 
             <div class="search">
-                🔍
+                <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search books...">
             </div>
 
-            <button class="login">
-                👤 Login
+            <button class="login" type="button">
+                <i class="fas fa-user"></i> Login
             </button>
         </div>
     </header>
 
-    <label for="menu-toggle" class="overlay"></label>
+    <main class="shop-container" id="all-books">
 
-    <div class="slide">
-        <h2>Categories</h2>
-        <ul>
-            <li>
-                <a href="#all-books">
-                    <i class="fas fa-book"></i>
-                    All Books
-                </a>
-            </li>
+        <div class="books-area">
 
-            <li>
-                <a href="#myanmar-novel">
-                    <i class="fas fa-book-open"></i>
-                    Myanmar Books
-                </a>
-            </li>
+            <section class="book-section" id="myanmar-novel">
 
-            <li>
-                <a href="#english-novel">
-                    <i class="fas fa-globe"></i>
-                    English Novel
-                </a>
-            </li>
+                <div class="section-title">
+                    <h2>Myanmar Books</h2>
 
-            <li>
-                <a href="#it-books">
-                    <i class="fas fa-laptop-code"></i>
-                    Information Technology
-                </a>
-            </li>
-
-            <li>
-                <a href="#business-books">
-                    <i class="fas fa-briefcase"></i>
-                    Business
-                </a>
-            </li>
-
-            <li>
-                <a href="#children-books">
-                    <i class="fas fa-child"></i>
-                    Children's Books
-                </a>
-            </li>
-
-            <li>
-                <a href="#other-books">
-                    <i class="fas fa-ellipsis-h"></i>
-                    Other
-                </a>
-            </li>
-        </ul>
-    </div>
-
-    <main class="shop-container">
-        <section class="books-area" id="all-books">
-            <h2 class="category-title" id="myanmar-books">
-                Myanmar Books
-            </h2>
-
-            <div class="book-grid">
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book1.png" alt="Ah Mhat Ta Ya">
-                    </div>
-                    <h3>အမှတ်တရ</h3>
-                    <p>Juu</p>
-                    <div class="rating">★★★★★ <span>(30)</span></div>
-                    <strong>6000 MMK</strong>
-                    <button>Add to Cart</button>
+                   <a onclick="toggleBooks(this, 'myanmar-novel')">
+                        View All →
+                    </a>
                 </div>
 
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book2.png" alt="Chit Kae Phuu Thw">
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="image/book1.png"
+                                alt="Ah Mhat Ta Ya">
+                        </div>
+                        <h3>အမှတ်တရ</h3>
+                        <p>Juu</p>
+                        <div class="rating">★★★★★ <span>(30)</span></div>
+                        <strong>6000 MMK</strong>
+                        <button type="button">Add to Cart</button>
                     </div>
-                    <h3>ချစ်ခဲ့ဖူးသော</h3>
-                    <p>Juu</p>
-                    <div class="rating">★★★★★ <span>(6)</span></div>
-                    <strong>9000 MMK</strong>
-                    <button>Add to Cart</button>
+
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="image/book2.png"
+                                alt="Chit Kae Phuu Thw">
+                        </div>
+                        <h3>ချစ်ခဲ့ဖူးသော</h3>
+                        <p>Juu</p>
+                        <div class="rating">★★★★★ <span>(6)</span></div>
+                        <strong>9000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="image/book3.png"
+                                alt="Ah Kyin Thu">
+                        </div>
+                        <h3>အကြင်သူ</h3>
+                        <p>Theo Saung</p>
+                        <div class="rating">★★★★★ <span>(20)</span></div>
+                        <strong>20000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="image/book4.png"
+                                alt="Lat Kyan La Yaung">
+                        </div>
+                        <h3>လက်ကျန်လရောင်</h3>
+                        <p>Pone Nya Khin</p>
+                        <div class="rating">★★★★★ <span>(22)</span></div>
+                        <strong>15000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+
+                    <div class="book-card extra-book">
+                        <div class="book-image">
+                            <img src="image/book5.png"
+                                alt="G Haw Thu">
+                        </div>
+                        <h3>ဂျီဟောသူ</h3>
+                        <p>Ma Sandar</p>
+                        <div class="rating">★★★★★ <span>(16)</span></div>
+                        <strong>10000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+
+                    <div class="book-card extra-book">
+                        <div class="book-image">
+                            <img src="image/book6.png"
+                                alt="Tain Phone Pr Lo La Ma Thr">
+                        </div>
+                        <h3>တိမ်ဖုံးပါလို့လမသာ</h3>
+                        <p>Ma Sandar</p>
+                        <div class="rating">★★★★★ <span>(8)</span></div>
+                        <strong>5000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+
+                    <div class="book-card extra-book">
+                        <div class="book-image">
+                            <img src="image/book7.png"
+                                alt="Strong Woman">
+                        </div>
+                        <h3>သန်မာတဲ့ အမျိုးသမီး</h3>
+                        <p>Nya Na</p>
+                        <div class="rating">★★★★★ <span>(5)</span></div>
+                        <strong>14000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+
+                    <div class="book-card extra-book">
+                        <div class="book-image">
+                            <img src="image/book8.webp"
+                                alt="Ko Yaung Ko War">
+                        </div>
+                        <h3>ကိုယ်ရောင်ကိုယ်ဝါ</h3>
+                        <p>Min Khant (Pyay)</p>
+                        <div class="rating">★★★★★ <span>(59)</span></div>
+                        <strong>9000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="book-section" id="english-novel">
+                <div class="section-title">
+                    <h2>English Novel</h2>
+
+                   <a onclick="toggleBooks(this, 'english-novel')">
+                        View All →
+                   </a>
                 </div>
 
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book3.png" alt="Ah Kyin Thu">
+                <div class="book-grid">
+
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="image/book9.png"
+                                alt="Hercules The World's Strongest Man">
+                        </div>
+                        <h3>Hercules: The World's Strongest Man</h3>
+                        <p>Alex Firth</p>
+                        <div class="rating">★★★★★ <span>(11)</span></div>
+                        <strong>5000 MMK</strong>
+                        <button type="button">Add to Cart</button>
                     </div>
-                    <h3>အကြင်သူ</h3>
-                    <p>Theo Saung</p>
-                    <div class="rating">★★★★★ <span>(20)</span></div>
-                    <strong>20000 MMK</strong>
-                    <button>Add to Cart</button>
+
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="image/book10.png"
+                                alt="Three Men in a Boat">
+                        </div>
+                        <h3>Three Men in a Boat</h3>
+                        <p>Jerome K. Jerome</p>
+                        <div class="rating">★★★★★ <span>(5)</span></div>
+                        <strong>6000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+
+                    <div class="book-card extra-book">
+                        <div class="book-image">
+                            <img src="image/book11.png"
+                                alt="Pompeii">
+                        </div>
+                        <h3>Karen Ball</h3>
+                        <p>POMPEII</p>
+                        <div class="rating">★★★★★ <span>(0)</span></div>
+                        <strong>5000 MMK</strong>
+                        <button type="button">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="book-section" id="it-books">
+                <div class="section-title">
+                    <h2>Information Technology</h2>
+
+                    <a onclick="toggleBooks(this, 'it-books')">
+                        View All →
+                    </a>
                 </div>
 
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book4.png" alt="Lat Kyan La Yaung">
+                <div class="book-grid">
+                    <div class="book-card">
+                        <div class="book-image">
+                            <img src="image/book12.jpg"
+                                alt="Java A Beginner's Guide">
+                        </div>
+                        <h3>Java: A Beginner's Guide</h3>
+                        <p>Herbert Schildt</p>
+                        <div class="rating">★★★★★ <span>(3)</span></div>
+                        <strong>10000 MMK</strong>
+                        <button type="button">Add to Cart</button>
                     </div>
-                    <h3>လက်ကျန်လရောင်</h3>
-                    <p>Pone Nya Khin</p>
-                    <div class="rating">★★★★★ <span>(22)</span></div>
-                    <strong>15000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
 
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book5.png" alt="G Haw Thu">
+                    <div class="book-card extra-book">
+                        <div class="book-image">
+                            <img src="image/book13.jpeg"
+                                alt="HTML Black Book">
+                        </div>
+                        <h3>HTML Black Book</h3>
+                        <p>Steven Holzner</p>
+                        <div class="rating">★★★★★ <span>(0)</span></div>
+                        <strong>12000 MMK</strong>
+                        <button type="button">Add to Cart</button>
                     </div>
-                    <h3>ဂျီဟောသူ</h3>
-                    <p>Ma Sandar</p>
-                    <div class="rating">★★★★★ <span>(16)</span></div>
-                    <strong>10000 MMK</strong>
-                    <button>Add to Cart</button>
                 </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book6.png" alt="Tain Phone Pr Lo La Ma Thr">
-                    </div>
-                    <h3>တိမ်ဖုံးပါလို့လမသာ</h3>
-                    <p>Ma Sandar</p>
-                    <div class="rating">★★★★★ <span>(8)</span></div>
-                    <strong>5000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book7.png" alt="Strong Woman">
-                    </div>
-                    <h3>သန်မာတဲ့ အမျိုးသမီး</h3>
-                    <p>Nya Na</p>
-                    <div class="rating">★★★★★ <span>(5)</span></div>
-                    <strong>14000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book8.webp" alt="Ko Yaung Ko War">
-                    </div>
-                    <h3>ကိုယ်ရောင်ကိုယ်ဝါ</h3>
-                    <p>Min Khant (Pyay)</p>
-                    <div class="rating">★★★★★ <span>(59)</span></div>
-                    <strong>9000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
-
-            </div>
-
-            <h2 class="category-title" id="english-novel">
-                English Novel
-            </h2>
-
-            <div class="book-grid">
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book9.png"
-                             alt="Hercules The World's Strongest Man">
-                    </div>
-                    <h3>Hercules: The World's Strongest Man</h3>
-                    <p>Alex Firth</p>
-                    <div class="rating">★★★★★ <span>(11)</span></div>
-                    <strong>5000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book10.png" alt="Three Men in a Boat">
-                    </div>
-                    <h3>Three Men in a Boat</h3>
-                    <p>Jerome K. Jerome</p>
-
-                    <div class="rating">★★★★★ <span>(5)</span></div>
-                    <strong>6000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book11.png" alt="Karen Ball">
-                    </div>
-                    <h3>Karen Ball</h3>
-                    <p>POMPEII</p>
-
-                    <div class="rating">★★★★★ <span>(0)</span></div>
-                    <strong>5000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
-
-            </div>
-
-            <h2 class="category-title" id="it-books">
-                Information Technology
-            </h2>
-
-            <div class="book-grid">
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book12.jpg" alt="Java A Beginner's Guide">
-                    </div>
-                    <h3>Java: A Beginner's Guide</h3>
-                    <p>Herbert Schildt</p>
-                    <div class="rating">★★★★★ <span>(3)</span></div>
-                    <strong>10000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
-
-                <div class="book-card">
-                    <div class="book-image">
-                        <img src="image/book13.jpeg" alt="HTML Black Book">
-                    </div>
-                    <h3>HTML Black Book</h3>
-                    <p>Steven Holzner</p>
-                    <div class="rating">★★★★★ <span>(0)</span></div>
-                    <strong>12000 MMK</strong>
-                    <button>Add to Cart</button>
-                </div>
-
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
+
+    <script>
+        function toggleBooks(button, categoryId) {
+
+            const section = document.getElementById(categoryId);
+
+            const extraBooks = section.querySelectorAll(".extra-book");
+
+            if (extraBooks.length === 0) {
+                return;
+            }
+
+            const isHidden =
+                !extraBooks[0].classList.contains("show");
+
+            extraBooks.forEach(book => {
+                book.classList.toggle("show", isHidden);
+            });
+
+            button.textContent = isHidden
+                ? "View Less ↑"
+                : "View All →";
+        }
+
+        document.querySelectorAll(".slide a").forEach(link => {
+            link.addEventListener("click", function () {
+                document.getElementById("menu-toggle").checked = false;
+            });
+        });
+    </script>
 
 </body>
 </html>
