@@ -126,14 +126,11 @@ nav .active {
 
 .about-image {
     height: 280px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: #d6e8f8;
     border-radius: 20px;
-
     font-size: 100px;
 }
 
@@ -158,9 +155,7 @@ nav .active {
     background: #e5f1fc;
     padding: 30px 20px;
     border-radius: 20px;
-
     box-shadow: 0 5px 15px rgba(53, 84, 116, 0.12);
-
     transition: 0.3s;
 }
 
